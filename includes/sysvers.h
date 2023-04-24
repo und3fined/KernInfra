@@ -107,6 +107,12 @@ extern "C" {
 
 #define kCFCoreFoundationVersionNumber_iOS_14_5 1775.118
 
+#define kCFCoreFoundationVersionNumber_iOS_16_0 1946.102
+
+#define kCFCoreFoundationVersionNumber_iOS_16_1 1953.1
+
+#define kCFCoreFoundationVersionNumber_iOS_16_4 1971
+
 #define kCFCoreFoundationVersionNumber10_10 1151.16
 
 #pragma clang diagnostic pop
