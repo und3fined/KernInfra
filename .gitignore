@@ -3,3 +3,4 @@
 .theos
 .ccls-cache
 packages
+/.DS_Store
