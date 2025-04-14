@@ -10,7 +10,7 @@ void kernVPrintf(const char *fmtstr, va_list args) {
 
 KernInfraContext kerninfra_context = {
     .vDoLog = (decltype(kerninfra_context.vDoLog))kernVPrintf,
-    .logLevel = KERNLOG_NONE,
+    .logLevel = KERNLOG_KERNRW,
 };
 
 void kerninfra_log(int ll, const char * format, ...) {
@@ -28,7 +28,7 @@ int init_kerninfra(int logLevel, void (*vDoLog)(const char *, va_list args)) {
     if (!!vDoLog) {
         kerninfra_context.vDoLog = vDoLog;
     }
-    
+
     if (rw_prov_init() != 0) {
         printf("failed rw provider's init!\n");
         return 1;
