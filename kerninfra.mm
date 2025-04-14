@@ -10,7 +10,7 @@ void kernVPrintf(const char *fmtstr, va_list args) {
 
 KernInfraContext kerninfra_context = {
     .vDoLog = (decltype(kerninfra_context.vDoLog))kernVPrintf,
-    .logLevel = KERNLOG_KERNRW,
+    .logLevel = KERNLOG_NONE,
 };
 
 void kerninfra_log(int ll, const char * format, ...) {
